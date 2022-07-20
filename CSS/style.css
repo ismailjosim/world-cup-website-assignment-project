@@ -48,7 +48,7 @@ main {
         line-height: 24px;
         padding: 16px 25px;
         color: #ffffff;
-        background: #DD0000;
+        background: #0c87d1;
         display: inline-block;
         border-radius: 5px;
 }
@@ -60,12 +60,19 @@ main {
         font-weight: 500;
         font-size: 20px;
         line-height: 30px;
+        transition: all .3s ease-in-out;
+}
+
+.btn_white:hover {
+        background: #0c87d1;
+        color: #ffffff;
 }
 
 .btn_outline {
-        border: 1px solid #161616;
+        border: 1px solid #0c87d1;
         font-size: 16px;
         padding: 4px 16px;
+        color: #0c87d1;
 }
 
 .secondary_heading {
@@ -132,18 +139,6 @@ main {
 .hero_btn:hover i {
         margin-left: 10px;
 }
-
-/* .hero_btn::after {
-        content: '';
-        border-radius: 100%;
-        border: 6px solid #ffffff;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation: ring 1.5s infinite;
-        z-index: -1;
-} */
 
 .img_box {
         position: relative;
@@ -316,7 +311,7 @@ main {
 }
 
 .item_link:hover {
-        color: #DD0000;
+        color: #0c87d1;
 }
 
 .social_links {
@@ -330,7 +325,6 @@ main {
         color: #161616;
         background-color: #fff;
         border-radius: 100px;
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -381,7 +375,8 @@ main {
 /*======================================
         RESPONSIVE DESIGN STYLING
 =======================================*/
-/* For Mobile */
+/*============= For Mobile ============*/
+
 @media screen and (max-width: 766px) {
         #header_section {
                 margin: 15px 0;
@@ -482,7 +477,7 @@ main {
 
 }
 
-/* // Medium devices (tablets, 768px and up) */
+/*==== Medium devices (tablets, 768px and up) ====*/
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
         .container {
