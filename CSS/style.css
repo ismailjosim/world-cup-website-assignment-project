@@ -116,7 +116,31 @@ main {
         font-weight: 400;
         margin-top: 20px;
         margin-bottom: 30px;
+}
 
+.hero_btn {
+        transition: all 0.3s ease-in-out 0s;
+        animation: moveInOut 2.5s infinite;
+}
+
+.hero_btn i {
+        transition: all 0.3s ease-in-out 0s;
+}
+
+.hero_btn:hover i {
+        margin-left: 10px;
+}
+
+.hero_btn::after {
+        content: '';
+        border-radius: 100%;
+        border: 6px solid #ffffff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: ring 1.5s infinite;
+        z-index: -1;
 }
 
 .img_box {
@@ -284,11 +308,41 @@ main {
 }
 
 /*======================================
+        Animation Keyframe
+=======================================*/
+@keyframes moveInOut {
+        0% {
+                transform: translateY(-15px);
+        }
+
+        50% {
+                transform: translateY(0px);
+        }
+
+        100% {
+                transform: translateY(-15px);
+        }
+}
+
+@keyframes ring {
+        0% {
+                width: 30px;
+                height: 30px;
+                opacity: 1;
+        }
+
+        100% {
+                width: 300px;
+                height: 300px;
+                opacity: 0;
+        }
+}
+
+/*======================================
         RESPONSIVE DESIGN STYLING
 =======================================*/
-
 /* For Mobile */
-/* // Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
         #header_section {
                 margin: 15px 0;
