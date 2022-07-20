@@ -117,6 +117,7 @@ main {
         font-weight: 400;
         margin-top: 20px;
         margin-bottom: 30px;
+        text-align: justify;
 }
 
 .hero_btn {
@@ -377,20 +378,6 @@ main {
         }
 }
 
-@keyframes ring {
-        0% {
-                width: 30px;
-                height: 30px;
-                opacity: 1;
-        }
-
-        100% {
-                width: 300px;
-                height: 300px;
-                opacity: 0;
-        }
-}
-
 /*======================================
         RESPONSIVE DESIGN STYLING
 =======================================*/
@@ -432,6 +419,11 @@ main {
                 line-height: 24px;
                 margin-top: 8px;
                 margin-bottom: 25px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
         }
 
         main {
@@ -498,14 +490,27 @@ main {
         }
 
         #header_section .container {
-                padding: 15px 10px 35px 45px;
+                padding: 60px 10px 60px 75px;
         }
 
 
         .hero_heading {
-                font-size: 35px;
-                line-height: 40px;
+                font-size: 40px;
+                line-height: 50px;
         }
+
+        .description {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+        }
+
+        .img_box {
+                top: 67px;
+        }
+
 
         main {
                 margin-top: 40px;
